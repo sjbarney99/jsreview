@@ -1,4 +1,5 @@
-// Consider an array of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+// Consider an array of sheep where some sheep may be missing from their place.
+// We need a function that counts the number of sheep present in the array (true means present).
 
 // For example,
 
@@ -12,3 +13,37 @@
 
 // Hint: Don't forget to check for bad values like null/undefined
 
+const ohWhere = arr => {
+	let sheep = arr.filter(e => e == true);
+	let count = sheep.length;
+	return count;
+};
+
+console.log(
+	ohWhere([
+		true,
+		true,
+		true,
+		false,
+		true,
+		true,
+		true,
+		true,
+		true,
+		false,
+		true,
+		false,
+		true,
+		false,
+		false,
+		true,
+		true,
+		true,
+		true,
+		true,
+		false,
+		false,
+		true,
+		true
+	])
+);

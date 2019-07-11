@@ -6,3 +6,10 @@
 
 // Output: "HEllO WOrld!"
 
+const vowler = str => {
+	return str.toLowerCase().replace(/[aeiou]/g, function(l) {
+		return l.toUpperCase();
+	});
+};
+
+console.log(vowler("hello there"));

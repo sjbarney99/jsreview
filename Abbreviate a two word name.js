@@ -8,3 +8,11 @@
 //
 // Patrick Feeney => P.F
 
+let name;
+
+const initializer = name => {
+	let letters = name.match(/\b\w/g).join(".");
+	return letters;
+};
+
+console.log(initializer((name = "Sydney Barney")));

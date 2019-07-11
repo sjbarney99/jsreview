@@ -17,3 +17,26 @@
 // +9 dog years for second year
 // +5 dog years for each year after that
 
+const animalYr = h => {
+	let c, d;
+
+	if (h <= 0) {
+		c = 0;
+		d = 0;
+	}
+	if (h === 1) {
+		c = 15;
+		d = 15;
+	}
+	if (h === 2) {
+		c = 15 + 9;
+		d = 15 + 9;
+	}
+	if (h > 2) {
+		c = 24 + h * 4;
+		d = 24 + h * 5;
+	}
+	return [h, c, d];
+};
+
+console.log(animalYr(20));

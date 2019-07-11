@@ -1,17 +1,17 @@
 //Our counter prototype is broken. Can you spot, what's wrong here?
 
 function Counter() {
-  this.value = 0;
+	return (this.value = 0);
 }
 
 Counter.prototype.increase = function() {
-  this.value++;
+	return this.value++;
 };
 
 Counter.prototype.getValue = function() {
-   this.value;
+	return this.value;
 };
 
-Counter.prototype.reset =  function() {
-  this.value = 0;
+Counter.prototype.reset = function() {
+	return (this.value = 0);
 };

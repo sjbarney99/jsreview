@@ -13,4 +13,14 @@
 // character = "z"
 // after = "zzz"
 
+const contaminated = (text, char) => {
+	let bug;
+	if (text === "" || char === "") {
+		bug = "";
+	} else {
+		bug = char.repeat(text.length);
+	}
+	return bug;
+};
 
+console.log(contaminated("abc", "z"));
